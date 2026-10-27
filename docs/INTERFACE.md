@@ -8,7 +8,7 @@ Azul profundo (`#123652`) para estrutura e ações, branco azulado (`#f4f8fb`) p
 
 O símbolo da marca é o PNG enviado pelo utilizador, sem redesenho, filtros, recoloração ou remoção de fundo. O fundo branco é preservado num suporte próprio; as dimensões mantêm a proporção original. O ficheiro também é usado no ícone do separador e aplicado aos brindes demonstrativos. Não depende de recursos remotos. A origem e o hash estão em `frontend/src/assets/README.md`.
 
-`MechanismArt.jsx` desenha uma vista explodida com SVG, incluindo anéis, dentes, gradientes e linhas de chamada. `useId` evita colisões entre os identificadores dos gradientes. A peça não é um desenho técnico de fabrico. O cartão de passaporte e os objetos dos brindes são ilustrações próprias, criadas com auxílio de IA e descritas em `AI_USAGE.md`. O logótipo aplicado não foi criado pela IA.
+`MechanismArt.jsx` desenha uma vista explodida com SVG, incluindo anéis, dentes, gradientes e linhas de chamada. `useId` evita colisões entre os identificadores dos gradientes. A peça não é um desenho técnico de fabrico. O cartão de passaporte e os objetos dos brindes são ilustrações próprias.
 
 ## Percurso
 
