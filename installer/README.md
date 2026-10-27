@@ -23,5 +23,3 @@ python test_runner.py -v
 Repete a compilação para as seis combinações de `darwin/windows/linux` e `amd64/arm64`. Atualiza `BINARIOS-SHA256.json` depois de compilar. A licença do runtime Go está em `GO-LICENSE.txt`. O uv e o Python são descarregados dos respetivos projetos e conservam as suas licenças.
 
 Os testes Go verificam hashes, HTTPS, extração, isolamento de configuração e bloqueio concorrente. Os testes Python verificam backup com WAL, portas ocupadas e versões de dependências. O relatório de instalação real está em `../docs/qa/installer-integration.json` e os limites em `../INSTALAR.md`.
-
-Todo o código deste instalador foi criado com auxílio de IA; não é atribuído a uma contribuição humana não confirmada.
