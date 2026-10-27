@@ -145,8 +145,6 @@ Limites deliberados: SQLite serializa escritas; o protótipo usa um catálogo pe
 | Aparência cuidada | Layout responsivo, confirmação, feedback e estados vazios |
 | Identificar auxílio de IA e explicar código | AI_USAGE.md, comentários e identificação no rodapé |
 
-O símbolo do Fórum é o PNG fornecido pelo utilizador, preservado sem alterações e identificado em `frontend/src/assets/README.md`. A composição tipográfica, os elementos geométricos e os objetos ilustrados foram construídos para esta demonstração com auxílio de IA. O logótipo recebido não é apresentado como criação da IA.
-
 ## Documentação complementar
 
 - [Instalação automática e sistemas suportados](INSTALAR.md)
