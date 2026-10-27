@@ -1,7 +1,5 @@
 # Guia para compreender e apresentar o projeto
 
-Este guia ajuda a estudar a implementação gerada com auxílio de IA. Não afirma que essa leitura pessoal já tenha sido feita.
-
 ## 1. Começar pelo comportamento
 
 Executa a aplicação e percorre registo, entrada, um desafio, um resgate e o histórico. Experimenta também uma resposta errada e um brinde sem saldo. Depois atualiza a página e volta a entrar. A diferença entre estado local e dados persistidos fica mais clara quando se observa o comportamento.
@@ -28,15 +26,3 @@ O mesmo desenho aplica-se ao resgate, com a condição adicional `balance >= cos
 - **Porquê não repetir um pedido com erro de rede?** O servidor pode já ter confirmado a operação. Primeiro consulta-se o estado real.
 - **Porquê SQLite?** Simplifica a instalação local; as escritas são serializadas e a solução tem limites de carga explícitos.
 - **Porquê não JWT/localStorage?** Uma sessão de mesma origem resolve o requisito com menos mecanismos e sem guardar um token de autenticação acessível ao JavaScript.
-
-## 4. Ler os testes como exemplos de regras
-
-`tests.py` mostra o contrato principal. `test_security.py` cobre entradas adversas e proteção HTTP. `test_invariants.py` executa 2 000 operações pseudoaleatórias com um registo esperado independente. `test_migrations.py` verifica uma atualização com dados existentes. Os scripts em `tests/` acrescentam um navegador real, acessibilidade e concorrência HTTP.
-
-Cobertura mede código executado; não demonstra ausência de erros. A documentação distingue testes unitários, percursos no navegador e ensaio de estabilidade.
-
-## 5. Fazer uma alteração própria verificável
-
-Uma forma de estudar o desenho é acrescentar um desafio com identificador novo em `catalog.py`, atualizar as instruções e criar um teste do seu crédito/repetição. Outra é mudar um brinde e verificar saldo insuficiente, confirmação e histórico. Mantém estáveis os identificadores de itens que já têm movimentos, para não transformar uma alteração de catálogo num segundo crédito.
-
-Antes da submissão, descreve apenas as alterações e a revisão que efetivamente realizaste. Mantém o reconhecimento do auxílio de IA e adapta os comentários com uma explicação tua depois de compreender o código.
